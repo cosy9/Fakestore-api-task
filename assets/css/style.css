@@ -552,6 +552,47 @@ h1 a {
 
 /* ### all-products ends here ### */
 
+/* ### major styling starts here ### */
+
+.major { 
+  margin-bottom: 78px;
+  margin-top: 16px;
+}
+
+.major h3 {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 2px solid #1dff76;
+  text-transform: uppercase;
+  margin: 10px auto 20px auto;
+}
+
+.major h3 span { color: #ff5b4f; }
+
+.major-list { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.major-list li { 
+  -webkit-box-shadow: -5px 2px 5px -2px #58ffa1bf; 
+  box-shadow: -5px 2px 5px -2px #58ffa1bf;
+  margin: 10px;
+}
+
+/* ### major styling ends here ### */
+
 /* ### home page main styling ends here #### */
 
 /* ### category page main styling starts here #### */
@@ -1484,6 +1525,12 @@ footer{
 /* ### media queries for 600px starts here ### */
 
 @media only screen and (max-width: 600px) {
+
+  /* ### home page major styling starts here ### */
+
+  .major h3{ font-size: 20px; }
+
+  /* ### home page major styling ends here ### */
 
   /* ### cart main section  styling starts here ### */
 
