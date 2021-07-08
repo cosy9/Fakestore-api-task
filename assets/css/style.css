@@ -994,6 +994,7 @@ select[name='sort-product']{
   display: flex;
   margin-top: 24px;
   border-bottom: 2px solid #252525;
+  padding-bottom: 13px;
 }
 
 .bottom-wrap li:nth-child(1) {
@@ -1381,7 +1382,6 @@ footer{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 13px;
   }
 
   .bottom-wrap li:nth-child(1) {
