@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>FakeStore | Home</title>
+    <title>Client</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
-    <link rel="stylesheet" media="screen" href="assets/vendor/jQuery/slick/slick-theme.css" />
-    <link rel="stylesheet" media="screen" href="assets/vendor/jQuery/slick/slick.css" />
     <link rel="stylesheet" media="screen" href="assets/css/style.css" />
 </head>
-
 <body>
     <!--container start-->
     <div class="container">
@@ -22,101 +19,42 @@
 								<span>line</span>
 						</div>
 						<ul class='nav-list'>
-								<li><a class='nav-anchor-style' href="./index.html" title='Home'>Home</a></li>
-								<li><a href="./Category.html" title='All Category'>All Category</a></li>
-								<li><a class='cart' href="./Cart.html" title='Cart'>Cart<span>0</span></a></li>
+								<li><a href="./index.html" title='Home'>Home</a></li>
+								<li><a  href="./Category.html" title='All Category'>All Category</a></li>
+								<li><a class='nav-anchor-style' href="./Cart.html" title='Cart'>Cart</a></li>
+								<li><a class='cart' href="#fixme" title='Cart'>Cart<span>0</span></a></li>
 						</ul>
 				</nav>
 		</div>
 	</header>
 	<!--header section ends-->
-	<!--main section start-->
-	<main>
-	<!--banner section start-->
-		<section class="home-banner">
-			<figure><img src="./assets/images/banner.jpg" alt="Shopping Guy"></figure>
-			<div class="wrapper">
-				<h2>Best Products At Discount of <span>50%</span></h2>	
-			</div>
-		</section>
-	<!--banner section ends-->
-	<!--sliding-images section starts-->
-		<section class="sliding-images">
-			<div class="wrapper">
-				<ul class="sliders">
-					<li>
-						<div class="sliders-wrap">
-								<figure>
-										<img src="./assets/images/1.jpg" alt="Electronics">
-								</figure>
-								<div class="wrap">
-										<h3>Electronics</h3>
-										<h4>Best Electronics Products at great Discount </h4>
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-										<a href="Category.html#all-category" title="Buy Now">Buy Now</a>
+        <!--main section start-->
+        <main>
+							<!--banner section start-->
+							<section class="cart-banner">
+								<figure><img src="./assets/images/checkout.jpg" alt="Shopping cart"></figure>
+								<div class="wrapper">
+									<h2>Best Products At Discount of <span>50%</span></h2>	
 								</div>
-						</div>
-					</li>
-					<li>
-						<div class="sliders-wrap">
-								<figure>
-										<img src="./assets/images/2.jpg" alt="Bags">
-								</figure>
-								<div class="wrap">
-										<h3>Women's Clothing</h3>
-										<h4>Best Quality Bags at Discount</h4>
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus</p>
-										<a  href="Category.html#all-category" title="Buy Now">Buy Now</a>
+							</section>
+						<!--banner section ends-->
+
+						<!--cart section starts-->
+							<section class="cart-data">
+								<div class="wrapper">
+									<h3>Products In Cart</h3>
+									<ul class="cart-header">
+										<li>Product</li>
+										<li>Price</li>
+										<li>Quantity</li>
+										<li>Total</li>
+									</ul>
+									<ul class="products-data"></ul>
+									<p class="empty">cart empty</p>
 								</div>
-						</div>
-					</li>
-					<li>
-						<div class="sliders-wrap">
-								<figure>
-										<img src="./assets/images/9.jpg" alt="Jwellery">
-								</figure>
-								<div class="wrap">
-										<h3>Jwellery</h3>
-										<h4>Best Jwellery to buy at discount rate</h4>
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus</p>
-										<a href="Category.html#all-category" title="Buy Now">Buy Now</a>
-								</div>
-						</div>
-					</li>
-					<li>
-						<div class="sliders-wrap">
-								<figure>
-										<img src="./assets/images/mens-cloting.jpg" alt="Mens Clothing">
-								</figure>
-								<div class="wrap">
-										<h3>Mens Clothing</h3>
-										<h4>Best Mens Clothing to buy at discount rate</h4>
-										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-										<a href="Category.html#all-category" title="Buy Now">Buy Now</a>
-								</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-	<!--sliding-images section ends-->
-	<!--all-products section starts-->
-		<section class="all-products">
-			<div class="wrapper">
-				<h3>All Product List</h3>
-				<form action="#fixme">
-					<div class='home-form-search'>
-						<input type="text" name="product-search" placeholder="Search Products by Name">
-					</div>
-				</form>
-				<ul class="all-products-data"></ul>
-					<div class="fetch">
-							<a href="#FIXME" title="Load More Results" class="fetchBtn">Load More Results</a>
-					</div>
-			</div>
-		</section>
-	<!--all-products section ends-->
-	</main>
+							</section>
+						<!--cart section ends-->
+			</main>
 	<!--main section end-->
 
 	<!--footer section start-->
@@ -182,8 +120,7 @@
 	<!--footer section end-->
     </div>
     <!--container end-->
-		<script src="./assets/vendor/jQuery/jquery-3.4.1.min.js"></script>
-		<script src="./assets/vendor/jQuery/slick/slick.js"></script>
+    <script src="./assets/vendor/jQuery/jquery-3.4.1.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
