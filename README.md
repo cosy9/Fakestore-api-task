@@ -22,6 +22,6 @@ with option of increasing or decresing products quantity and removing products a
 
 # Note 
 
-Decrease button will not work if current quantity of product is 1 
+Decrease button will not work if current quantity of product is 1  
 
 
