@@ -283,6 +283,30 @@ if(page_path_category.includes('Category.html')){
 
 //category page functionality ends here
 
+//cart page functionality starts here
+
+var page_path_cart = window.location.href;
+if(page_path_cart.includes('Cart.html')){
+  var cartList = document.querySelector('.nav-list li:nth-child(4)')
+  cartList.classList.add('not-active-list')
+  function checkIfCartEmpty(){
+  var para =document.querySelector('.empty')
+  para.innerHTML= ''
+  var productNumbers = localStorage.getItem('cartNumbers');
+  if(productNumbers == '0'){
+    var textToDisplay = "Your Cart is Empty"
+    para.textContent= textToDisplay
+  }
+  else{
+    para.innerHTML=''
+  }
+  }
+  checkIfCartEmpty()
+}
+
+//cart page functionality ends here
+
+//genral code to store products data across all pages
 
 function allDataOfProducts() {
   //1 initialize AJAX
@@ -307,32 +331,6 @@ function allDataOfProducts() {
 }
 
 allDataOfProducts()
-
-//cart page functionality starts here
-
-var page_path_cart = window.location.href;
-if(page_path_cart.includes('Cart.html')){
-  var cartList = document.querySelector('.nav-list li:nth-child(4)')
-  cartList.classList.add('not-active-list')
-  function checkIfCartEmpty(){
-  var para =document.querySelector('.empty')
-  para.innerHTML= ''
-  var productNumbers = localStorage.getItem('cartNumbers');
-  if(productNumbers == '0'){
-    var textToDisplay = "Your Cart is Empty"
-    para.textContent= textToDisplay
-  }
-  else{
-    para.innerHTML=''
-  }
-  }
-  checkIfCartEmpty()
-}
-
-//cart page functionality ends here
-
-
-//genral code to store products data across all pages
 
 // few seconds of delay to let the content load via XML http request
 
