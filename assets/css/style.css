@@ -551,7 +551,7 @@ h1 a {
 }
 
 .pop-up{
-  top: 50%;
+  top: 17%;
   left: 50%;
   position: fixed;
   -webkit-transform: translate(-50%,-50%);
@@ -1010,20 +1010,30 @@ select[name='sort-product']{
 
 .left::before{
   content: "\f053";
-  font: 600 16px 'Font Awesome 5 Free';
+  font: 600 24px 'Font Awesome 5 Free';
   position: absolute;
   left: 12px;
-  top: 3px;
+  top: -1px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out; 
+  -o-transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
 }
 
 .right::after{
   content: "\f054";
-  font: 600 16px 'Font Awesome 5 Free';
+  font: 600 24px 'Font Awesome 5 Free';
   position: absolute;
   right: 12px;
-  top: 3px;
+  top: -1px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out; 
+  -o-transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
+}
+
+.left:hover::before,.right:hover::after{
+  color:#00ff9f;
 }
 
 .products-data a{
@@ -1032,6 +1042,14 @@ select[name='sort-product']{
   font-weight: 600;
   border-radius: 10px;
   padding: 4px;
+  -webkit-transition: all 0.3s ease-in-out; 
+  -o-transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
+}
+
+.products-data a:hover{
+  color:#ff6a50;
+  background:#2f2f2f;
 }
 
 /* ### cart page main styling ends here #### */
@@ -1347,6 +1365,13 @@ footer{
   /* ### cart page styling starts here ### */
 
   .products-data figure { width: 140px; }
+
+  .left:hover::before,.right:hover::after{ color:#fff; }
+
+  .products-data a:hover{
+    color:#2f2f2f;
+    background:#ff6a50;
+  }
 
   /* ### cart page styling ends here ### */
   
