@@ -16,7 +16,7 @@ menuLinks.forEach(function (menuLink) {
 //home page functionality starts here
 
 var page_path = window.location.href;
-if ((!page_path.includes('Category'))&&(!page_path.includes('Cart'))) { // checking if url is not category or cart page
+if ((!page_path.includes('Category'))&&(!page_path.includes('Cart'))) { // checking if url is not category or cart page for index.html page
   var popDiv = document.querySelector('.pop-up')
   popDiv.classList.add('not-active')
   var loadDiv = document.querySelector('.fetch') //load More button
