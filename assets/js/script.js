@@ -399,10 +399,7 @@ function setItems(product){
   //  var cartStored = JSON.parse(JSON.stringify(cartItems))
   if(cartItems != null){
     if(cartItems[product.id]== undefined){
-      cartItems={
-        ...cartItems,
-        [product.id]:product
-      }
+      cartItems = Object.assign({}, cartItems, { [product.id]:product})
     }
     cartItems[product.id].incart +=1
   }
