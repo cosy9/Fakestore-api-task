@@ -1,4 +1,1 @@
-prdxn-dev-framework
-===================
-
-PRDXN's "starting package" used for development.
+simple e commerce store using plain html,css and vanila js
